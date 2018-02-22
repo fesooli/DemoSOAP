@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fellipe.demosoap.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edValorUm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"/>
+
+    <EditText
+        android:id="@+id/edValorDois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"/>
+
+    <Spinner
+        android:id="@+id/spOperacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/operacoes"/>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calcular"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="90sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
